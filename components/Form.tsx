@@ -88,6 +88,32 @@ const Form = () => {
             className="border rounded"
           />
         </div>
+
+        <div>
+          <label>Facebook Profile</label>
+          <input
+            placeholder={inputData.facebook}
+            onChange={(e) => handleInputChange("facebook", e.target.value)}
+            className="border rounded"
+          />
+        </div>
+
+        <div>
+          <label>Linkedin Profile</label>
+          <input
+            placeholder={inputData.linkedin}
+            onChange={(e) => handleInputChange("linkedin", e.target.value)}
+            className="border rounded"
+          />
+        </div>
+        <div>
+          <label>Twiiter Profile</label>
+          <input
+            placeholder={inputData.twitter}
+            onChange={(e) => handleInputChange("twitter", e.target.value)}
+            className="border rounded"
+          />
+        </div>
       </div>
     </div>
   );

@@ -12,6 +12,9 @@ const initialState = {
       company: "Example Corp",
       website: "www.example.com",
       address: "123 Main Street, City, Country",
+      facebook: "",
+      linkedin: "",
+      twitter: "",
     },
   ],
 };
