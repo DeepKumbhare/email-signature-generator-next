@@ -10,6 +10,12 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
+                hostname: 'cdn2.hubspot.net',
+                port: '',
+                pathname: '/hubfs/53/tools/email-signature-generator/icons/**',
+            },
+            {
+                protocol: 'https',
                 hostname: 'avatars.githubusercontent.com',
                 port: '',
                 pathname: '/u/**',

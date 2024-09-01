@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
 import EmailSignature from "@/components/EmailSignature";
+import EmailSignatureTemplate1 from "./EmailSignatureTemplate1";
 import Form from "@/components/Form";
 
 const EmailSignatureWrapper = () => {
@@ -41,7 +42,9 @@ const EmailSignatureWrapper = () => {
         Email Signature Generator
 
         <div className="flex gap-4 items-center">
-          <EmailSignature ref={signatureRef} />
+          {/* <EmailSignature ref={signatureRef} /> */}
+          <EmailSignatureTemplate1 ref={signatureRef} />
+
           <Form/>
         </div>
           <div className="my-4 flex gap-4">

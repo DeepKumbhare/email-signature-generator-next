@@ -6,6 +6,8 @@ const Form = () => {
   const inputData = useSelector((state: any) => state.inputData);
   const dispatch = useDispatch();
 
+  console.log(inputData)
+
   const handleInputChange = (field, value) => {
     dispatch(updateInput({ field, value }));
   };
@@ -25,18 +27,26 @@ const Form = () => {
     >
       <div className="flex flex-col gap-4">
         <div>
-          <label>Name</label>
+          <label>First Name</label>
           <input
-            placeholder={inputData.name}
-            onChange={(e) => handleInputChange("name", e.target.value)}
+            placeholder={inputData.firstName}
+            onChange={(e) => handleInputChange("firstName", e.target.value)}
+            className="border rounded"
+          />
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input
+            placeholder={inputData.lastName}
+            onChange={(e) => handleInputChange("lastName", e.target.value)}
             className="border rounded"
           />
         </div>
         <div>
           <label>Job Title</label>
           <input
-            placeholder={inputData.title}
-            onChange={(e) => handleInputChange("title", e.target.value)}
+            placeholder={inputData.jobTitle}
+            onChange={(e) => handleInputChange("jobTitle", e.target.value)}
             className="border rounded"
           />
         </div>
@@ -111,6 +121,47 @@ const Form = () => {
           <input
             placeholder={inputData.twitter}
             onChange={(e) => handleInputChange("twitter", e.target.value)}
+            className="border rounded"
+          />
+        </div>
+        <div>
+          <label>Instagram Profile</label>
+          <input
+            placeholder={inputData.instagram}
+            onChange={(e) => handleInputChange("instagram", e.target.value)}
+            className="border rounded"
+          />
+        </div>
+
+        <div>
+          <label>Text Color</label>
+          <input
+            type="color"
+            value={inputData.textColor}
+            placeholder={inputData.textColor}
+            onChange={(e) => handleInputChange("textColor", e.target.value)}
+            className="border rounded"
+          />
+        </div>
+
+        <div>
+          <label>Theme Color</label>
+          <input
+            type="color"
+            value={inputData.themeColor}
+            placeholder={inputData.themeColor}
+            onChange={(e) => handleInputChange("themeColor", e.target.value)}
+            className="border rounded"
+          />
+        </div>
+
+        <div>
+          <label>Link Color</label>
+          <input
+            type="color"
+            value={inputData.linkColor}
+            placeholder={inputData.linkColor}
+            onChange={(e) => handleInputChange("linkColor", e.target.value)}
             className="border rounded"
           />
         </div>
